@@ -14,7 +14,7 @@
 - Example
 > Repository repository = new Repository(); </br>
 SMSSender sender = new SMSSender(apiKey, apiSecret, repository, maxRetry, maxDailyOTP, maxDailyOTPForANumber); </br>
-sender.sendOTP(SenderName, receiverPhoneNumber);
+sender.sendOTP(senderName, receiverPhoneNumber);
 
 - using this code in the main function with :
 - apiKey and apiSecret is provided by Nexmo(use apiKey "7d79bbaa", apiSecret "nMvG95ZsqOjQ3dAO" to try)
@@ -22,3 +22,5 @@ sender.sendOTP(SenderName, receiverPhoneNumber);
 - maxRetry: times to retry if fails to send sms
 - maxDailyOTP: max sms can be sent in one day
 - maxDailyOTPForANumber: max sms can be sent in one day to a phone number
+- senderName: your name
+- receiverPhoneNumber: phone number of the receiver
