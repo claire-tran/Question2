@@ -83,7 +83,7 @@ public class Repository {
         dataMessage.put(phoneNumber, dataInfo);
 
         // update total message sent
-        setTotalMessageSent(getTotalMessageSent() + 1);
+        setTotalMessageSent(getTotalMessageSent());
 
         // write back data to file
         FileWriter fileWriter = new FileWriter(getClass().getResource(url).getPath());
