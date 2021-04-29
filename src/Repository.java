@@ -29,6 +29,7 @@ public class Repository {
                 this.dataMessage.put(input[0], info);
             }
             reader.close();
+            totalMessageSent = getTotalMessageSent();
         } catch (Exception e) {
             throw new Exception(e);
         }
