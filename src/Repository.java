@@ -39,11 +39,12 @@ public class Repository {
 
     // get total SMS sent today
     public int getTotalMessageSent() {
+        int total = 0;
         for (MessageInfo data : dataMessage.values()) {
-            totalMessageSent += data.getCount();
+            total += data.getCount();
         }
 
-        return totalMessageSent;
+        return total;
     }
 
     // set total SMS sent today
